@@ -1,3 +1,4 @@
 /build_pdf/pdf/*.pdf
 
 .cache
+AGENTS.md
