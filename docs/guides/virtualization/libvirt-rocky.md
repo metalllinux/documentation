@@ -3,7 +3,7 @@ title: Setting Up libvirt on Rocky Linux
 author: Howard Van Der Wal
 contributors: Steven Spencer 
 ai_contributors: Gemma 4 (gemma-4-31B-it-UD-Q4_K_XL)
-tested with: "9, 10"
+tested with: 9,10
 tags:
 - libvirt
 - kvm
@@ -16,7 +16,7 @@ This document adheres to the [AI contribution policy found here.](../contribute/
 
 ## Introduction
 
-[libvirt](https://libvirt.org/) is an incredible virtualization API that allows for the virtualization of almost any operating system of your choice with the power of KVM as the hypervisor, and QEMU as the emulator.
+libvirt^1^ is an incredible virtualization API that allows for the virtualization of almost any operating system of your choice with the power of KVM as the hypervisor, and QEMU as the emulator.
 
 This document will provide the instructions for setting up libvirt on Rocky Linux 9 and 10. Where steps differ between the two versions, these are clearly marked.
  
@@ -212,3 +212,7 @@ virsh undefine --domain <YOUR_VM_NAME> --nvram
 ## Conclusion
 
 * libvirt allows you to install and manage your virtual machines with ease, alongside extensive XML editing options, secureboot, cloud-init support, and more.
+
+## References
+
+1. "libvirt.org" by the libvirt project [https://libvirt.org/index.html](https://libvirt.org/index.html)
