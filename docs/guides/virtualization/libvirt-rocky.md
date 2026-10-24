@@ -150,7 +150,7 @@ sudo setfacl -R -m u:qemu:rx <ISO_DIRECTORY>
 sudo setfacl -d -m u:qemu:rx <ISO_DIRECTORY>
 
 # Configure SELinux for read access
-sudo semanage fcontext -a -t virt_image_t "<ISO_DIRECTORY>os(/.*)?"
+sudo semanage fcontext -a -t virt_image_t "<ISO_DIRECTORY>(/.*)?"
 sudo restorecon -Rv <ISO_DIRECTORY>
 
 # 1. Grant traversal access to the home directory
